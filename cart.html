@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title> Cart </title>
+    <meta charset="utf-8">
+    <meta name="vieport" content="width=device-width" initial-scale="1.0">
+     <!-- Font Style-->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+     <!-- Style Sheet-->
+     <link rel="stylesheet" type="text/css" href="homebar.css">
+     <!-- Font Awesome-->
+     <script src="https://kit.fontawesome.com/c790ae2caf.js" crossorigin="anonymous"></script>
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+ <body>
+     <!-- Food Menu -->
+    <div class="homebar-container">
+        <div class="logo" onclick="returnhomepage()"><i class="fab fa-cuttlefish logo-icon"></i>heat <i class="fas fa-bowling-ball logo-icon"></i>ow<i class="fas fa-utensils logo-icon"></i></div>
+            <div id="homebarItems" class="homebar-items">
+                    <a href="Homebar.html"> <i class="fas fa-home"></i> HOME</a>
+                    <a href="menu.html"> <i class="fas fa-utensils"></i> &nbsp;MENU</a>
+                    <a href="cart.html"> </i> CART <i class="fas fa-shopping-cart "></i><span class="numberofitems items-power"> 0 </span> </a>
+            </div>
+    </div>
+    <!-- Shopping Cart -->
+    <h1 class="shopping-heading"> CART </h1>
+    <div class="shoppingcart">    
+        <ul class="shopping-items">
+            <li class="hide-id item-id">Item Id</li>
+            <li class="item-item" style=color:black;>Item</li>
+            <li class="item-decrement"></li>
+            <li class="item-quantity" style=color:black;>Quantity</li>
+            <li class="item-increment"></li>
+            <li class="item-amount" style=color:black;>Amount</li>
+            <li class="item-delete" style=color:black;>Add/Remove</li>
+        </ul>
+        <div class="product-items">
+            
+        </div>
+    </div>
+    <div class="shopping-total">
+    <h3> No. of Items selected -&nbsp;<span class="numberofitems">0</span></h3>
+    <h3> Total Amount Payable Rs. &nbsp;<span class="total">0</span></h3>
+    </div>
+    <div>
+        <button class="checkout">Proceed to Check Out</button>
+    </div>
+
+
+    <!-- JS sheet-->
+    <script src="homebar.js"></script>
+</body>
+</html>
